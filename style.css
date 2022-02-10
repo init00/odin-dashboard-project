@@ -1,0 +1,221 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+.avatar {
+    height: 2rem;
+    width: auto;
+}
+
+.navbar-1 {
+    display: flex;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    gap: 2rem;
+}
+
+.navbar-2 {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 5fr;
+    grid-template-areas: "avatar message buttons";
+    align-items: center;
+}
+
+.avatar-2 {
+    height: 4rem;
+    justify-self: flex-end;
+}
+
+.welcome-message {
+    margin: 1rem;
+    font-size: 1.2rem;
+    justify-self: flex-start;
+    width: max-content;
+}
+
+.buttons {
+    grid-area: buttons;
+    grid-template-columns: repeat(3, 1fr);
+    justify-self: flex-end;
+}
+
+.cta-button {
+    grid-area: button;
+    background-color: burlywood;
+    border-radius: 1rem;
+    padding: 0.8rem;
+    margin: 1rem;
+    width: 8rem;
+}
+
+
+.search-box-container {
+    flex: 2;
+}
+
+.search-box {
+    border-radius: 2rem;
+    height: 1.5rem;
+}
+
+.profile-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.sidebar li {
+    padding-top: 1rem;
+    list-style: none;
+    display: flex;
+    padding-bottom: 1rem;
+    gap: 0.5rem;
+}
+
+.dashboard {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.5rem;
+    margin: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    grid-template-areas: "sidebar nav"
+                        "sidebar main";
+}
+
+.main-content {
+    grid-area: main;
+    display: grid;
+    background-color: white;
+    grid-template-columns: 5fr 2fr;
+    grid-template-rows: 0.5fr 5fr;
+    grid-template-areas: "proj announce"
+                         "cards news";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: beige;
+    display: grid;
+    grid-template-rows: 1fr 2fr 3fr;
+    font-size: 1.2rem;;
+}
+
+
+.nav {
+    grid-area: nav;
+    display: grid;
+    background-color: bisque;
+    align-items: center;
+    grid-template-rows: 0.5fr;
+}
+
+
+.header {
+    font-size: 1.5rem;
+    font-weight: bold;
+    align-self: center;
+    margin-left: 2rem;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+}
+
+.cards-area {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 2.5rem;
+    margin: 1rem;
+}
+
+p.card-body {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.card {
+    background-color: bisque;
+    border-left: 10px solid orange;
+    display: grid;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.card-header {
+    font-weight: bold;
+}
+
+.card-footer {
+    padding-right: 1rem;
+    justify-self: flex-end;
+    margin-top: 3rem;
+}
+
+.news-area {
+    margin: 1rem;
+    display: grid;
+    grid-template-rows: 2fr 0.1fr 2.9fr;
+}
+
+.notices {
+    background-color: blanchedalmond;
+    border-radius: 1rem;
+    display: grid;
+    grid-template-rows: 1fr .1fr 1fr .1fr 1fr;
+}
+
+.notice {
+    padding: 1.5rem;
+}
+
+.trending {
+    display: grid;
+    background-color: blanchedalmond;
+    align-content: flex-start;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    font-size: 1.1rem;
+}
+
+.trend {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 3fr;
+}
+
+
+.bold {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.trend-head {
+    font-size: 1.5rem;
+    font-weight: bold;
+    justify-self: flex-start;
+    padding-top: 1rem;
+
+}
+
+.avatar-3 {
+    height: 4rem;
+    padding: 1rem;
+    margin-left: 2rem;;
+    justify-self: self-end;
+}
+
+.app-name {
+    color: gray;
+}
+
+.thematic-break {
+    width: 80%;
+    color: whitesmoke;
+}
